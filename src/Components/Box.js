@@ -1,8 +1,6 @@
 import React from 'react';
 import './Box.css';
-import Button from 'react-bootstrap/Button';
 import 'tachyons';
-import icons from 'glyphicons';
 
 
 

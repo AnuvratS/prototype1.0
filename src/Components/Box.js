@@ -4,22 +4,19 @@ import 'tachyons';
 
 
 
-const Box = () => {
+const Box = ({onRouteChange}) => {
   return (<div className = "box">
     <div className="split left background">
-    <div className="background">
   <div className="centered">
     
     <h2 className = "white ">View Candidates</h2>
     <h1>👤</h1>
     <input
-                
+                onClick = {() => onRouteChange('position')}
                 className="white ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                 type="submit"
                 value="by Position"
               />
-
-  </div>
   </div>
 </div>
 

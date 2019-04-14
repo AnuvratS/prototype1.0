@@ -3,24 +3,29 @@
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 1;
   top: 0;
   overflow-x: hidden;
   padding-top: 20px;
+
 }
 
 /* Control the left side */
 .left {
   left: 0;
-  
+
+
 
 }
 .background{
-
+   position: fixed;
+  left: 0;
+  right: 0;
+  
    background-image: url('loksabha5.jpg');
    background-repeat:no-repeat;
 background-size:cover;
 background-position: center;
+
 }
 
 /* Control the right side */
@@ -40,6 +45,7 @@ background-position: center;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
 }
 
 /* Style the image inside the centered container, if needed */

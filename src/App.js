@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Box from './Components/Box.js';
 import SignIn from './Components/SignIn.js';
-import Navigation from './Components/Navigation';
+
+import Position from   './Components/Position/Position.js';
 
 
 
@@ -20,26 +21,36 @@ onRouteChange = (route) => {
       this.setState({isSignedIn: false})
     } else if (route === 'home') {
       this.setState({isSignedIn: true})
+    }else if (route === 'position'){
+      this.setState({isSignedIn: true})
     }
     this.setState({route: route});
   }
   render() {
     const { isSignedIn,route } = this.state;
-    return (
-      <div className="App">
-      <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
-      { route === 'home'
-          ? <div><Box />
-              </div>
-          : 
-            <SignIn onRouteChange={this.onRouteChange}/>
+      return (<div className="App">
+                  { (route === 'home')
+          ? <div>
+              <Box onRouteChange={this.onRouteChange}/>
+            </div>
+            :(route === 'position')
+              ? <Position />
+              : 
+             <SignIn onRouteChange={this.onRouteChange}/>
+            
+                
+              
+          }
+
+      </div>
+        );
+            
+        
              
-        }
+        
       
       
-       
-             </div>
-    );
+
   }
 }
 

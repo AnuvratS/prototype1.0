@@ -7,8 +7,12 @@
     "glyphicons": "^0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-dropdown-input": "^0.1.11",
     "react-particles-js": "^2.5.1",
     "react-scripts": "2.1.8",
+    "react-select-fast-filter-options": "^0.2.3",
+    "react-select-search": "^0.9.6",
+    "semantic-ui-react": "^0.86.0",
     "tachyons": "^4.11.1"
   },
   "scripts": {

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Box from './Components/Box.js';
 import SignIn from './Components/SignIn.js';
-
 import Position from   './Components/Position/Position.js';
+import Location from   './Components/Location/Location.js';
 
 
 
@@ -35,6 +35,8 @@ onRouteChange = (route) => {
             </div>
             :(route === 'position')
               ? <Position />
+              :(route === 'location')
+              ? <Location />
               : 
              <SignIn onRouteChange={this.onRouteChange}/>
             

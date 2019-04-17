@@ -27,7 +27,8 @@ const Box = ({onRouteChange}) => {
      <h1> 📍</h1>
 
      <input
-                
+                onClick = {() => onRouteChange('location')}
+
                 className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                 type="submit"
                 value="by Location"

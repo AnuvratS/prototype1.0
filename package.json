@@ -5,6 +5,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "glyphicons": "^0.2.0",
+    "google-map-react": "^1.1.4",
+    "google-maps-react": "^2.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-dropdown-input": "^0.1.11",
